@@ -7,7 +7,7 @@ public class _00_HashMapDemo {
 		//Creating a HashMap of id's and students
 		HashMap<Integer, String> studentRoster = new HashMap<Integer, String>();
 		
-		studentRoster.put(75869, "Danny Ditko");
+		studentRoster.put(75869, "Danny Divido");
 		studentRoster.put(15684, "Tiana Tickles");
 		studentRoster.put(87561, "Freddy Farewell");
 		studentRoster.put(96546, "Willy Wham");
@@ -17,7 +17,7 @@ public class _00_HashMapDemo {
 		System.out.println("The student at #35413 is: ");
 		System.out.println(studentRoster.get(35413));
 		
-		System.out.println("\nAll the vales:");
+		System.out.println("\nAll the values:");
 		for(String s : studentRoster.values()){
 			System.out.println(s);
 		}

@@ -20,7 +20,21 @@ public class _03_TestMatchingBrackets {
 
 	// USE A STACK TO COMPLETE THE METHOD FOR CHECKING IF EVERY OPENING BRACKET HAS A MATCHING CLOSING BRACKET
 	private boolean doBracketsMatch(String b) {
-		
+		Stack<Character> bracketStack = new Stack<Character>();
+		for (int i = 0; i < b.length(); i++) {
+			if (b.charAt(i) == '{') {
+				bracketStack.push('{');
+			}
+			if (b.charAt(i) == '}') {
+				if (bracketStack.isEmpty()) {
+					return false;
+				}
+				bracketStack.pop();
+			}
+		}
+		if (bracketStack.isEmpty()) {
+			return true;
+		}
 		return false;
 	}
 
